@@ -55,6 +55,12 @@ fi
 
 function blob_fixup() {
     case "${1}" in
+        system/lib64/libcamera_algoup_jni.xiaomi.so|system/lib64/libcamera_mianode_jni.xiaomi.so)
+            "${PATCHELF}" --add-needed "libgui_shim_miuicamera.so" "${2}"
+            ;;
+        system/lib64/libmicampostproc_client.so)
+            "${PATCHELF}" --remove-needed "libhidltransport.so" "${2}"
+            ;;
         system/priv-app/MiuiCamera/MiuiCamera.apk)
             tmp_dir="${EXTRACT_TMP_DIR}/MiuiCamera"
             $APKTOOL d -q "$2" -o "$tmp_dir" -f
