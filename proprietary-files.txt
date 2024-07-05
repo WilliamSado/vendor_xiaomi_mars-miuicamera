@@ -1,5 +1,4 @@
 -product/priv-app/MiuiCamera/MiuiCamera.apk:system/priv-app/MiuiCamera/MiuiCamera.apk;OVERRIDES=Camera,Camera2,GoogleCameraGo|3fc521870711d6a6945f61127a9aeb9001721836
-system_ext/etc/public.libraries-xiaomi.txt:system/etc/public.libraries-xiaomi.txt
 system_ext/lib64/libcamera_algoup_jni.xiaomi.so:system/lib64/libcamera_algoup_jni.xiaomi.so
 system_ext/lib64/libcamera_mianode_jni.xiaomi.so:system/lib64/libcamera_mianode_jni.xiaomi.so
 system_ext/lib64/libmicampostproc_client.so:system/lib64/libmicampostproc_client.so

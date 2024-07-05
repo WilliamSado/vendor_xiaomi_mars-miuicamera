@@ -8,6 +8,10 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/xiaomi/mars-miuicamera/configs/privapp-permissions-miuicamera.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/privapp-permissions-miuicamera.xml
 
+# Public libraries
+PRODUCT_COPY_FILES += \
+    vendor/xiaomi/mars-miuicamera/configs/public.libraries-xiaomi.txt:$(TARGET_COPY_OUT_SYSTEM)/etc/public.libraries-xiaomi.txt
+
 # Shim
 PRODUCT_PACKAGES += \
     libgui_shim_miuicamera
