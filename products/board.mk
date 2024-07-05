@@ -1,0 +1,1 @@
+include vendor/xiaomi/mars-miuicamera/common/BoardConfigVendor.mk
